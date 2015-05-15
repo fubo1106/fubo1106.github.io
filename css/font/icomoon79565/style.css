@@ -44,6 +44,7 @@
 .icon-google-plus:before {
 	content: "\e606";
 }
-.icon-sina:before {
-	content: "\e607";
+.icon-sina{
+	background: url("../../../images/signature/sina2.png");
+	width: 
 }

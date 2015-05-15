@@ -10,7 +10,7 @@ category: portfolio
   Interest?
 </p>
 
-<!--
+
 {% for publication in site.data.publication %}
   <section>
     <a href="{{ publication.url }}">
@@ -24,7 +24,10 @@ category: portfolio
     <p>
       <strong>Technologies:</strong> {{ publication.technologies | join: ", " }}
     </p>
+	<p>
+	<a href="{{ publication.code }}">code</a> &nbsp;
+	<a href="{{ publication.video }}">video</a> &nbsp;
+	</p>
   </section>
   <div class="spacer"></div>
 {% endfor %}
--->
