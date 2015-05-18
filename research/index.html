@@ -14,7 +14,7 @@ category: portfolio
 {% for publication in site.data.publication %}
   <section>
     <a href="{{ publication.url }}">
-      <img class="inline pull-right" src="/images/publication/{{ publication.image }}"
+      <img class="inline pull-right" src="{{ publication.image }}"
            alt="{{ publication.name }} Screenshot" width="280">
     </a>
     <h2><a href="{{ publication.url }}">{{ publication.name }}</a></h2>
@@ -25,8 +25,10 @@ category: portfolio
       <strong>Technologies:</strong> {{ publication.technologies | join: ", " }}
     </p>
 	<p>
-	<a href="{{ publication.code }}">code</a> &nbsp;
-	<a href="{{ publication.video }}">video</a> &nbsp;
+	{%if publication.paper!=""%}<a href="{{ publication.paper }}">[paper]</a> &nbsp;{%endif%}
+	{%if publication.code!=""%}<a href="{{ publication.code }}">[code]</a> &nbsp;{%endif%}
+	{%if publication.video!=""%}<a href="{{ publication.video }}">[video]</a> &nbsp;{%endif%}
+	
 	</p>
   </section>
   <div class="spacer"></div>

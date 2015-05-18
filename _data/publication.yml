@@ -1,7 +1,8 @@
 - name: video stablization
-  image: stable.png
-  url: /research/publication/video-stablization
-  title: video-stablization
+  image: /data/publication/video-stablization/stable.png
+  #url: /research/publication/video-stablization
+  url: 
+  title: course presentation
   oneliner: Video Stablization
   role: Developer
   description: >
@@ -10,8 +11,24 @@
     - stabilization
     - video processing
     - opencv
-  code: /research/publication/video-stablization/Shaking-Solution.7z
-  video: /research/publication/video-stablization/adjusted1.avi
+  code: /data/publication/video-stablization/Shaking-Solution.7z
+  video: /data/publication/video-stablization/adjusted1.avi
+  
+- name: Mocap data segmenntation
+  image: /data/publication/under-thesis/motion.png
+  url: 
+  title: undergraduate thesis
+  oneliner: 
+  role: Developer
+  description: >
+    This is my undergraduate thesis, this project focus on human mocap data segmentation, given a serious of motion data, state-of-art algorithm can segment out distinct kind of motions, however, most of time we prefer a
+    hirarchical segmentation, which means firstly different kind of motion is cut out, then for each class of motion, the repetitive cycle also should be recognized. In this paper, I'll introduce a attempt for hirarchical 
+    Mocap data segmentation	method.
+  technologies:
+    - Mocap data
+    - segmentation
+    - matlab
+  paper: /data/publication/under-thesis/under-thesis.pdf
 # - name: Le Wagon On Demand
   # image: lewagonondemand.png
   # url: https://ondemand.lewagon.org
