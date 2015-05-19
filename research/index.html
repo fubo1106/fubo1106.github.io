@@ -25,7 +25,7 @@ category: portfolio
       <strong>Technologies:</strong> {{ publication.technologies | join: ", " }}
     </p>
 	<p>
-	{%if publication.paper!=""%}<a href="{{ publication.paper }}">[paper]</a> &nbsp;{%endif%}
+	{%if publication.paper!=""%}<a href="{{ publication.paper }}">[paper]</a> &nbsp;{%endif%} {%if publication.language == "cn"%}[in chinese]{%endif%}
 	{%if publication.code!=""%}<a href="{{ publication.code }}">[code]</a> &nbsp;{%endif%}
 	{%if publication.video!=""%}<a href="{{ publication.video }}">[video]</a> &nbsp;{%endif%}
 	
